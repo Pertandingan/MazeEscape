@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Escape+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Maze Escape+</h1>
+        <div class="game-info">
+            <span id="levelDisplay">Level: 1</span>
+            <span id="timerDisplay">Time: 0s</span>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <button id="fullscreenBtn">Go Fullscreen</button>
+            <button id="resetBtn">Reset Level</button>
+            <button id="pauseBtn">Pause</button>
+        </div>
+        <div class="instructions">
+            <p>Use arrow keys or WASD to move</p>
+            <p>Press P to pause, R to reset level, F for fullscreen</p>
+            <p>Reach the golden goal to advance to the next level!</p>
+        </div>
+        <div class="game-over" id="gameOver" style="display: none;">
+            <h2>Congratulations!</h2>
+            <p id="gameOverText">You completed all levels!</p>
+            <button id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
